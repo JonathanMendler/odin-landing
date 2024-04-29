@@ -6,16 +6,20 @@
 
 }
 
-.hero a {
-  text-decoration: none;
+.hero a, .content .subtext {
   font-size: 18px;
   color: #E5E7EB;
+}
+
+.hero a {
+  text-decoration: none;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 10px 200px;
 }
 
 .header p {
@@ -26,12 +30,22 @@
 .content {
   display: flex;
   justify-content: center;
+  flex: 1;
+  gap: 60px;
+}
+
+.left {
+  width: 300px;
 }
 
 .content .title {
   font-size: 48px;
   font-weight: bolder;
   color: #F9FAF8;
+}
+
+p .subtext {
+  text-align: left;
 }
 
 .content img {
