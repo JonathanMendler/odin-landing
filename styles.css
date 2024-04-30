@@ -1,14 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .hero, .footer {
   background-color: #1F2937;
 }
 
 .hero {
-
+  display: flex;
+  flex-direction: column;
+  gap: 96px;
+  padding-bottom: 48px;
 }
 
-.hero a, .content .subtext {
+.hero a, .banner .subtext {
   font-size: 18px;
   color: #E5E7EB;
+}
+
+.links {
+  display: flex;
+  gap: 12px;
 }
 
 .hero a {
@@ -27,18 +41,32 @@
   color: #F9FAF8;
 }
 
-.content {
+.banner {
   display: flex;
   justify-content: center;
+  align-items: center;
   flex: 1;
   gap: 60px;
 }
 
 .left {
+  display: flex;
+  flex-direction: column;
   width: 300px;
+  gap: 12px;
 }
 
-.content .title {
+.signup {
+  align-self: flex-start;
+  background-color: #3882F6;
+  border: none;
+  border-radius: 8px;
+  padding: 6px 24px;
+  color: white;
+  font-weight: bold;
+}
+
+.banner .title {
   font-size: 48px;
   font-weight: bolder;
   color: #F9FAF8;
@@ -46,8 +74,11 @@
 
 p .subtext {
   text-align: left;
+
 }
 
-.content img {
+.banner img {
   width: 200px;
+  border: 2px solid whitesmoke;
+  border-radius: 12px;
 }
